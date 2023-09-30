@@ -22,17 +22,18 @@ export const CandidateList = () => {
         </div>
       </section>
       {candidates.map((candidate) => {
-        return <Candidate
-          key={candidate.id}
-          id={candidate.id}
-          fullName={candidate.fullName}
-          country={candidate.country}
-          degree={candidate.degree}
-          pill={candidate.pill}
-          tags={candidate.tags}
-        />
+        return (
+          <Candidate
+            key={candidate.id}
+            id={candidate.id}
+            fullName={candidate.fullName}
+            country={candidate.country}
+            degree={candidate.degree}
+            pill={candidate.pill}
+            tags={candidate.tags}
+          />
+        )
       })}
-
     </div>
   )
 }

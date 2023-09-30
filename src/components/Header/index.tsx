@@ -7,7 +7,13 @@ import UserClose from '../../assets/header/User_Close.svg'
 import UserVoice from '../../assets/header/User_Voice.svg'
 import Menu from '../Menu'
 
-export const Header = () => {
+interface Props {
+  state: boolean
+  setState: React.Dispatch<React.SetStateAction<boolean>>
+}
+export const Header = ({ state, setState }: Props) => {
+
+  console.log({ state })
 
   return (
     <header className="flex items-center justify-between max-h-[5.6rem]">
@@ -17,7 +23,7 @@ export const Header = () => {
       </div>
       <div className="basis-[87.7rem] flex-grow flex justify-between items-start">
         <div className="flex-grow flex justify-center">
-          <div className='w-[32rem]'>
+          <div className='w-[32rem] z-10' onMouseEnter={() => setState(true)} onMouseLeave={() => setState(false)}>
             <Menu />
           </div>
         </div>

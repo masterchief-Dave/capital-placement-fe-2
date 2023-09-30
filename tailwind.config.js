@@ -13,6 +13,9 @@ export default {
       },
       fontFamily: {
         poppins: ['poppins', 'sans-serif']
+      },
+      backgroundColor: {
+        overlay: 'rgba(246, 246, 249, 0.3)'
       }
     },
   },
