@@ -31,6 +31,8 @@ export const CandidateList = () => {
             degree={candidate.degree}
             pill={candidate.pill}
             tags={candidate.tags}
+            completed={candidate.completed}
+            programs={candidate.programs}
           />
         )
       })}

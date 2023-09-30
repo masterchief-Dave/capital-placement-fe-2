@@ -1,3 +1,4 @@
+import { PlayCircle, Book } from "lucide-react"
 
 interface ICandidate {
   id: number
@@ -6,11 +7,13 @@ interface ICandidate {
   degree: string
   tags: string[]
   pill: string[]
+  completed?: number
+  programs?: number
 }
 
-export const Candidate = ({ fullName, country, degree, tags, pill }: ICandidate) => {
+export const Candidate = ({ fullName, country, degree, tags, pill, completed, programs }: ICandidate) => {
   return (
-    <div className="flex items-center border-y gap-x-[0.8rem] bg-white font-poppins">
+    <div className="flex items-center border-y gap-x-[0.8rem] bg-white font-poppins relative">
       <div>
         <input type="checkbox" />
       </div>
@@ -36,6 +39,24 @@ export const Candidate = ({ fullName, country, degree, tags, pill }: ICandidate)
             </div>
           </div>
         </div>
+      </div>
+
+
+      <div className="absolute top-[2rem] right-[3.2rem] flex items-center gap-x-[1rem]">
+        {programs === undefined ? null : (
+          <div className="w-[4.1rem] h-[2.3rem] rounded-[1.6rem] flex items-center justify-center gap-x-[0.4rem] bg-[#F7F8FD] text-[#305DC6]">
+            <PlayCircle className="w-[1.4rem] h-[1.4rem]" />
+            <span>
+              {programs}
+            </span>
+          </div>
+        )}
+        {completed === undefined ? null : (
+          <div className="rounded-[1.6rem] h-[2.3rem] gap-x-[0.8rem] flex items-center justify-center bg-[#F7F8FD] w-[11.2rem] text-[#305DC6]">
+            <Book className="w-[1.4rem] h-[1.4rem]" />
+            <span>{completed} programs</span>
+          </div>
+        )}
       </div>
     </div>
   )

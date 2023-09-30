@@ -5,6 +5,8 @@ interface ICandidate {
   degree: string
   tags: string[]
   pill: string[]
+  completed?: number
+  programs?: number
 }
 
 export const candidates: ICandidate[] = [
@@ -54,17 +56,8 @@ export const candidates: ICandidate[] = [
     country: 'New York, USA',
     degree: 'Bachelor - Cambridge University (2023 - 2023)',
     tags: ['top_candidate'],
-    pill: ['New York', 'Marketing', 'London']
+    pill: ['New York', 'Marketing', 'London'],
+    completed: 4,
+    programs: 5
   },
 ]
-
-/**
- * 
- *  {
-    fullName: '',
-    country: '',
-    degree: '',
-    tags: [],
-    pill: []
-  }
- */
