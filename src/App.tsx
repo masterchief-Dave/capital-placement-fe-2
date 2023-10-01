@@ -16,7 +16,7 @@ function App() {
       <Sidebar />
       <main className='w-full bg-[#F9FAFF] p-[3.2rem]'>
         <div className="mb-[3.2rem]">
-          <Header state={mouseState} setState={setMouseState} />
+          <Header setState={setMouseState} />
         </div>
 
         <section className='flex items-start gap-[3.2rem]'>

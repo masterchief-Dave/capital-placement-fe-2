@@ -13,7 +13,7 @@ interface ICandidate {
 
 export const Candidate = ({ fullName, country, degree, tags, pill, completed, programs }: ICandidate) => {
   return (
-    <div className="flex items-center border-y gap-x-[0.8rem] bg-white font-poppins relative">
+    <div className="flex items-center gap-x-[0.8rem] bg-white font-poppins relative">
       <div>
         <input type="checkbox" />
       </div>

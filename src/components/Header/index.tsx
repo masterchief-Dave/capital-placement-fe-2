@@ -8,12 +8,10 @@ import UserVoice from '../../assets/header/User_Voice.svg'
 import Menu from '../Menu'
 
 interface Props {
-  state: boolean
+
   setState: React.Dispatch<React.SetStateAction<boolean>>
 }
-export const Header = ({ state, setState }: Props) => {
-
-  console.log({ state })
+export const Header = ({ setState }: Props) => {
 
   return (
     <header className="flex items-center justify-between max-h-[5.6rem]">

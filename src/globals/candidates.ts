@@ -57,7 +57,27 @@ export const candidates: ICandidate[] = [
     degree: 'Bachelor - Cambridge University (2023 - 2023)',
     tags: ['top_candidate'],
     pill: ['New York', 'Marketing', 'London'],
-    completed: 4,
-    programs: 5
+    completed: 5,
+    programs: 4
+  },
+  {
+    id: 7,
+    fullName: 'Bam Adebayo',
+    country: 'Florida, USA',
+    degree: 'Bachelor - Cambridge University (2023 - 2023)',
+    tags: ['top_candidate'],
+    pill: ['New York', 'Marketing', 'London'],
+    completed: 1,
+    programs: 0
+  },
+  {
+    id: 8,
+    fullName: 'Kevin Durant',
+    country: 'Texas, USA',
+    degree: 'Bachelor - Cambridge University (2023 - 2023)',
+    tags: ['top_candidate'],
+    pill: ['New York', 'Marketing', 'London'],
+    completed: 2,
+    programs: 1
   },
 ]
