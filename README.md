@@ -1,5 +1,5 @@
 # React + TypeScript + Vite
-## To start the application run
+To start the application run in develoment mode run the command in your terminal
 `yarn run dev`
 ## Expanding the ESLint configuration
 
