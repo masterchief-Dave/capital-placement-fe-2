@@ -43,7 +43,10 @@ export const Sidebar = () => {
 const Icon = ({ img }: { img: string }) => {
   return (
     <div className='w-[4.8rem] h-[4.8rem] flex items-center justify-center'>
-      <img src={img} className={`object-contain ${img === '/src/assets/House_01.svg' ? 'w-[2.4rem] h-[2.4rem]' : 'w-[4.8rem] h-[4.8rem]'}`} />
+      <img
+        src={img}
+        className={`object-contain ${img === '/src/assets/House_01.svg' ? 'w-[2.4rem] h-[2.4rem] object-contain' : 'w-[4.8rem] h-[4.8rem]'}`}
+      />
     </div>
   )
 }
