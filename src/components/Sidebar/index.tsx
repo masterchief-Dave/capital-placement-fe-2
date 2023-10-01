@@ -28,7 +28,7 @@ export const Sidebar = () => {
       </div>
 
       <div className='flex flex-col items-center gap-[2.4rem]'>
-        <div className='w-[4.8rem] h-[4.8rem]'>
+        <div className='w-[4.8rem] h-[4.8rem] hover:bg-[#E9EFFF] cursor-pointer rounded-[0.8rem]'>
           <img src={Settings} className='w-[4.8rem] h-[4.8rem] object-contain' />
         </div>
 
