@@ -12,13 +12,15 @@ export const Sidebar = () => {
         </div>
 
         <div className='flex flex-col gap-[3.2rem]'>
-          {sidebarIcons.map((icon, index) => {
+          {sidebarIcons.map(({ icon, name }, index) => {
             return (
               <div
                 key={index}
-                className={`rounded-[.8rem] ${icon === '/src/assets/House_01.svg' ? 'bg-[#E9EFFF]' : ''} hover:bg-[#E9EFFF] cursor-pointer`}
+                className={`rounded-[.8rem] ${name === 'home' ? 'bg-[#E9EFFF]' : ''} hover:bg-[#E9EFFF] cursor-pointer`}
               >
-                <Icon img={icon} />
+                <div className='w-[4.8rem] h-[4.8rem] flex items-center justify-center'>
+                  {icon()}
+                </div>
               </div>
             )
           })}
@@ -34,19 +36,6 @@ export const Sidebar = () => {
           <p className='text-[#B1CDFD] font-semibold'>AS</p>
         </div>
       </div>
-
-    </div>
-  )
-}
-
-
-const Icon = ({ img }: { img: string }) => {
-  return (
-    <div className='w-[4.8rem] h-[4.8rem] flex items-center justify-center'>
-      <img
-        src={img}
-        className={`object-contain ${img === '/src/assets/House_01.svg' ? 'w-[2.4rem] h-[2.4rem] object-contain' : 'w-[4.8rem] h-[4.8rem]'}`}
-      />
     </div>
   )
 }
